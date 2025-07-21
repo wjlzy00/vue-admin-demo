@@ -34,11 +34,8 @@ const headerStyle = {
   backgroundColor: "#7dbcea",
 };
 const contentStyle = {
-  textAlign: "center",
-  minHeight: 500,
-  lineHeight: "500px",
-  color: "#fff",
-  backgroundColor: "#108ee9",
+  color: "#000000",
+  marginLeft: "200px",
 };
 
 const footerStyle = {
@@ -52,11 +49,12 @@ const siderStyle = {
   height: "100vh",
   position: "fixed",
   backgroundColor: "#fff",
+  width: "200px",
 }
 import { ref } from "vue";
 import router from "../router";
 
-const selectedKeys = ref(["1"]);
+const selectedKeys = ref(['/goods' || router.path]);
 
 const menuItems = [
   { key: '/dashboard', title: '仪表盘' },
