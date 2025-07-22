@@ -54,7 +54,7 @@ const siderStyle = {
 import { ref } from "vue";
 import router from "../router";
 
-const selectedKeys = ref(['/goods' || router.path]);
+const selectedKeys = ref([router.path]);
 
 const menuItems = [
   { key: '/dashboard', title: '仪表盘' },
