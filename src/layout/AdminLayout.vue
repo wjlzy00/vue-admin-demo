@@ -99,6 +99,7 @@ const menuItems = [
   { key: "/goods", title: "商品管理" },
   { key: "/orders", title: "订单管理" },
   { key: "/users", title: "用户管理" },
+  { key: "/rbac", title: "权限管理" },
 ].map((item) => ({
   key: item.key,
   label: item.title,

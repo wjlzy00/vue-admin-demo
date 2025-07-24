@@ -4,7 +4,8 @@ const routes = [
   { path: '/dashboard', component: () => import('../views/Dashboard.vue') },
   { path: '/goods',     component: () => import('../views/GoodsList.vue') },
   { path: '/orders',    component: () => import('../views/OrderList.vue') },
-  { path: '/users',     component: () => import('../views/UserList.vue') }
+  { path: '/users',     component: () => import('../views/UserList.vue') },
+  { path: '/rbac',      component: () => import('../views/RBAC.vue') }
 ]
 export default createRouter({
   history: createWebHistory(),
