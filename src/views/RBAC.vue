@@ -134,7 +134,7 @@ onMounted(() => {
     initLoading.value = false;
     data.value = fakeDataUrl.results;
     list.value = fakeDataUrl.results;
-  }, 1000);
+  });
 });
 </script>
 <style scoped>
