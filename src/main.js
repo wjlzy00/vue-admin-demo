@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 import './style.css'
 import App from './App.vue'
 import Antd from 'ant-design-vue'
@@ -36,5 +37,8 @@ use([
 
 
 const app = createApp(App);
+const pinia = createPinia();
+
+
 app.component('v-chart', ECharts)
-app.use(Antd).use(router).mount('#app');
+app.use(Antd).use(router).use(pinia).mount('#app');
